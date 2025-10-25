@@ -2,7 +2,7 @@ module Grid (rectangularGrid) where
 
 import Data.List
 
-rectangularGrid :: (Float, Float, Int) -> (Float, Float, Int) -> [(Float, Float)]
+rectangularGrid :: (Double, Double, Int) -> (Double, Double, Int) -> [(Double, Double)]
 rectangularGrid (xmin, xmax, nx) (ymin, ymax, ny) =
   let xStep = (xmax - xmin) / fromIntegral (nx - 1)
       yStep = (ymax - ymin) / fromIntegral (ny - 1)
